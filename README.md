@@ -4,8 +4,7 @@ Solution to task A3 for CS5346.
 
 ## Notebook
 
-- You can view a non-interactive version of the notebook [here](https://nbviewer.org/github/goodhamgupta/cs5346_task_A3/blob/main/A0225160U_A3.ipynb)
-- Or, you can click below to launch with Binder!
+- You can click below to launch with Binder!
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/goodhamgupta/cs5346_task_A3/HEAD?labpath=A0225160U_A3.ipynb)
 
