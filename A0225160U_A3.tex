@@ -22,6 +22,12 @@
     \item The country is identified by the location in of the company. In the visualization, we show the top 10 countries based on the number of ratings we have for each country.
     \item The visualization consists of a \textbf{Horizontal Violin Plot}. We choose this plot to demonstrate the range of ratings for the given to the chocolate made in the countries.
     \item The visualization is plotted for all breeds, and has a color coding signifying the "Coat Length" of each dog breed.
+    \item The following visual encoding is used:
+    \begin{itemize}
+        \item The x-axis represents Rating, which is a ordinal attribute with the range between 1 to 5. Since rating values can never be negative, we use a "Horizontal Violin Plot".
+        \item The y-axis represents the Country, which is a categorical attribute.
+        \item Colors are used as "Channels", to denote the rating distributions for different countries.
+    \end{itemize}
     \begin{figure}[H]
         \centering
         \includegraphics[width=1.0\textwidth]{violin}
@@ -35,6 +41,12 @@
 \begin{itemize}
     \item In this visualization, we aim to see the distribution of words used to describe chocolates. We compare the words used with the rating given for each chocolate.
     \item We use a \textbf{Box Plot} here, and only show the top 10 words as there are a total of 2455 unique words.
+    \item The following visual encoding is used:
+    \begin{itemize}
+        \item The x-axis represents Rating, which is a ordinal attribute with the range between 1 to 5. 
+        \item The y-axis represents Characteristic, which is the "word" used to describe the chocolate. This is a categorical variable.
+        \item Colors are used as "Channels", to denote the ratings distributions for different words.
+    \end{itemize}
     \begin{figure}[H]
         \centering
         \includegraphics[width=1.0\textwidth]{box}
@@ -50,6 +62,13 @@
     \item By definition, we select only choclates that have a cocoa percentage of above 85\% as "Dark Chocolate". Note that similar to the previous question, the "destination" country is decided by the location of the "company" that produces the chocolate.
     \item We also preprocess the dataset to label encode both the source and the destination countries.
     \item We use a \textbf{Sankey Diagram} for the visualization, demonstrating the flow of dark chocolate from one region to another.
+    \item The following visual encoding is used:
+    \begin{itemize}
+        \item The y-axis represents "Countries", which is a categorical variable. We use a dual y-axis for this plot.
+        \item The "incoming flow count" and "outgoing flow count" are quantitative values.
+        \item "Links" via lines are used to demonstrate the movement between a source and a destination country. For each link, "Color" is used as a channel.
+        \item "Size" is used as a channel, to demonstrate the number of imports/exports for a given country. Larger the number, larger is the size of the "country" on the graph.
+    \end{itemize}
     \begin{figure}[H]
         \centering
         \includegraphics[width=1.0\textwidth]{sankey}
